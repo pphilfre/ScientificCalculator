@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Simple Calculator</title>
+	<link href="style.css" rel="stylesheet">
+	<link href="AlphaShift.css" rel="stylesheet">
+</head>
+<body>
+
+
+<div class="container" id="calculatorBase">
+
+	<div class="display">
+		<div class="shiftAlphaActiveBox" id="isShiftActiveBox">S</div>
+		<div class="shiftAlphaActiveBox" id="isAlphaActiveBox">A</div>
+		<p id="inputDisplayText"></p>
+		<p id="outputDisplayText"></p>
+	</div>
+
+
+	<div class="keys-container">
+		<div class="functionKeys">
+			<div class="functionButton" id="shiftButton">
+				<p class="functionText" id="shiftText">SHIFT</p>
+				<button class="function" id="shift"></button>
+			</div>
+			<div class="functionButton" id="alphaButton">
+				<p class="functionText" id="alphaText">ALPHA</p>
+				<button class="function" id="alpha"></button>
+			</div>
+		</div>
+
+		<div class="advancedKeys">
+			<div id="advancedRow1">
+				<div class="button-wrapper">
+					<span class="small-text">min</span>
+					<button class="advanced" id="minMax">max</button>
+				</div>
+
+				<button class="advanced" id="cubed">x<sup>3</sup></button>
+
+				<button class="advanced" id="invisible1"></button>
+				<button class="advanced" id="invisible2"></button>
+
+				<button class="advanced" id="absolute">abs</button>
+				<button class="advanced" id="sign">sign</button>
+
+
+			</div>
+			<div id="advancedRow2">
+				<button class="advanced" id="fraction"><sup>x</sup>&frasl;<sub>y</sub></button>
+
+				<div class="button-wrapper">
+					<span class="small-text">∛</span>
+					<button class="advanced" id="root">√</button>
+				</div>
+
+
+				<button class="advanced" id="square">X<sup>2</sup></button>
+
+
+				<div class="button-wrapper">
+					<button class="advanced" id="exponent">x<sup>y</sup></button>
+				</div>
+				<button class="advanced" id="log">log</button>
+				<div class="button-wrapper">
+					<span class="small-text">e<sup>y</sup></span>
+					<button class="advanced" id="ln">ln</button>
+				</div>
+
+
+			</div>
+			<div id="advancedRow3">
+				<div class="button-wrapper">
+					<span class="small-text" id="AText">A</span>
+					<button class="advanced" id="negative">(-)</button>
+				</div>
+
+				<div class="button-wrapper">
+					<span class="small-text" id="FactText">FACT</span>
+					<span class="small-text" id="bText">B</span>
+
+					<button class="advanced" id="DMS">° ❜ ❞</button>
+				</div>
+				<div class="button-wrapper">
+					<span class="small-text" id="factorialText">x!</span>
+					<span class="small-text" id="cText">C</span>
+					<button class="advanced" id="x-1">X<sup>-1</sup></button>
+				</div>
+
+				<div class="button-wrapper">
+					<span class="small-text" id="sinText">sin⁻¹</span>
+					<span class="small-text" id="dText">D</span>
+					<button class="advanced" id="sin">sin</button>
+				</div>
+				<div class="button-wrapper">
+					<span class="small-text" id="cosText">cos⁻¹</span>
+					<span class="small-text" id="eText">E</span>
+					<button class="advanced" id="cos">cos</button>
+				</div>
+				<div class="button-wrapper">
+					<span class="small-text" id="tanText">tan⁻¹</span>
+					<span class="small-text" id="fText">F</span>
+					<button class="advanced" id="tan">tan</button>
+				</div>
+
+
+			</div>
+			<div id="advancedRow4">
+				<div class="button-wrapper">
+					<span class="small-text">RECALL</span>
+					<button class="advanced" id="store">STO</button>
+				</div>
+
+				<div class="button-wrapper">
+					<span class="small-text">←</span>
+					<button class="advanced" id="ENG">ENG</button>
+				</div>
+				<button class="advanced" id="bracketStart">(</button>
+
+				<div class="button-wrapper">
+					<span class="small-text" id="commaSymbol">❜</span>
+					<span class="small-text" id="xSymbol">𝑥</span>
+					<button class="advanced" id="bracketEnd">)</button>
+				</div>
+				<div class="button-wrapper">
+					<span class="small-text" id="yText">y</span>
+					<button class="advanced" id="SD">S <=> D</button>
+				</div>
+
+				<div class="button-wrapper">
+					<span class="small-text" id="showMemory">M</span>
+					<span class="small-text" id="subtractMemory">M-</span>
+					<button class="advanced" id="memory">M+</button>
+				</div>
+
+			</div>
+
+		</div>
+		<div class="keys">
+			<div id="row1">
+				<button class="number" id="seven">7</button>
+				<button class="number" id="eight">8</button>
+				<div class="button-wrapper">
+					<span class="small-text">Reset</span>
+					<button class="custom" id="nine">9</button>
+				</div>
+				<div class="button-wrapper">
+					<span class="small-text" id="undoText">UNDO</span>
+					<button class="custom" id="Del">DEL</button>
+				</div>
+				<button class="custom" id="AC">AC</button>
+			</div>
+			<div id="row2">
+				<button class="number" id="four">4</button>
+				<button class="number" id="five">5</button>
+				<button class="number" id="six">6</button>
+				<div class="button-wrapper">
+					<span class="small-text">nPr</span>
+					<button class="custom" id="multiply">x</button>
+				</div>
+				<div class="button-wrapper">
+					<span class="small-text">nCr</span>
+					<button class="custom" id="divide">÷</button>
+				</div>
+			</div>
+			<div id="row3">
+				<button class="number" id="one">1</button>
+				<button class="number" id="two">2</button>
+				<button class="number" id="three">3</button>
+				<div class="button-wrapper">
+					<span class="small-text">Pol</span>
+					<button class="custom" id="add">+</button>
+				</div>
+				<div class="button-wrapper">
+					<span class="small-text">Rec</span>
+					<button class="custom" id="subtract">-</button>
+				</div>
+			</div>
+			<div id="row4">
+				<div class="button-wrapper">
+					<span class="small-text">Rnd</span>
+					<button class="custom" id="zero">0</button>
+				</div>
+
+				<div class="button-wrapper">
+					<span class="small-text" id="randomIntText">RanInt#</span>
+					<span class="small-text" id="randomText">Ran#</span>
+					<button class="custom" id="random">.</button>
+				</div>
+				<div class="button-wrapper">
+					<span class="small-text" id="piSymbol">π</span>
+					<span class="small-text" id="eSymbol">e</span>
+					<button class="custom" id="10x">x10<sup>𝑥</sup></button>
+				</div>
+
+				<div class="button-wrapper">
+					<span class="small-text">%</span>
+					<button class="custom" id="Ans">Ans</button>
+				</div>
+				<div class="button-wrapper">
+					<span class="small-text" id="approxEquals">≈</span>
+					<button class="custom" id="equals">=</button>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+</div>
+<script src="Keys.js" type="module"></script>
+<script src="script.js" type="module"></script>
+
+
+</body>
+</html>

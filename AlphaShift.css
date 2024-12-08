@@ -1,0 +1,235 @@
+#shiftText {
+	color: #e7ae3a;
+}
+
+
+#showMemory {
+	color: #bd416e;
+	transform: translate(130%);
+}
+
+#subtractMemory {
+	color: #e7ae3a;
+
+	transform: translate(-70%);
+}
+
+#alphaText {
+	color: #bd416e;
+}
+
+.functionKeys {
+	display: flex;
+	flex-direction: row;
+	gap: 10px;
+	padding-bottom: 15px;
+}
+
+#colonText {
+	color: #bd416e;
+
+}
+
+.shiftAlphaActiveBox {
+	width: 10px;
+	height: 10px;
+	background-color: #86ad99;
+	color: #D0E6DAFF;
+	font-size: 10px;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	position: absolute;
+	top: 25px;
+}
+
+#undoText {
+	color: #bd416e;
+}
+
+#isShiftActiveBox {
+	left: 25px;
+}
+
+#isAlphaActiveBox {
+	left: 40px;
+}
+
+.functionText {
+	font-size: 12px;
+	margin-bottom: 5px;
+}
+
+.function {
+	border-radius: 50%;
+	width: 25px;
+	aspect-ratio: 1;
+	background-color: #272727;
+	cursor: pointer;
+}
+
+.advancedKeys {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 5px;
+}
+
+#advancedRow4 {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	width: 100%;
+}
+
+#advancedRow3 {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	width: 100%;
+	padding-bottom: 15px;
+}
+
+#advancedRow2 {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	width: 100%;
+	padding-bottom: 15px;
+}
+
+#advancedRow1 {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	width: 100%;
+	padding-bottom: 15px;
+}
+
+.button-wrapper {
+	position: relative;
+	display: inline-flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+
+.advanced {
+	font-size: 0.5rem;
+}
+
+#commaSymbol {
+	font-size: 0.5rem;
+	color: #e7ae3a;
+	margin-right: 20px;
+}
+
+#yText {
+	font-size: 0.5rem;
+	color: #bd416e;
+
+}
+
+#xSymbol {
+	font-size: 0.5rem;
+	color: #bd416e;
+	margin-left: 20px;
+}
+
+#AText {
+	font-size: 0.5rem;
+	color: #bd416e;
+	margin-left: 20px;
+}
+
+#FactText {
+	font-size: 0.5rem;
+	color: #e7ae3a;
+	margin-right: 20px;
+}
+
+#bText {
+	font-size: 0.5rem;
+	color: #bd416e;
+	margin-left: 30px;
+}
+
+#factorialText {
+	font-size: 0.5rem;
+	color: #e7ae3a;
+	margin-right: 20px;
+}
+
+#cText {
+	font-size: 0.5rem;
+	color: #bd416e;
+	margin-left: 20px;
+}
+
+#sinText {
+	font-size: 0.5rem;
+	color: #e7ae3a;
+	margin-right: 20px;
+}
+
+#dText {
+	font-size: 0.5rem;
+	color: #bd416e;
+	margin-left: 20px;
+}
+
+#cosText {
+	font-size: 0.5rem;
+	color: #e7ae3a;
+	margin-right: 20px;
+}
+
+#eText {
+	font-size: 0.5rem;
+	color: #bd416e;
+	margin-left: 20px;
+}
+
+#tanText {
+	font-size: 0.5rem;
+	color: #e7ae3a;
+	margin-right: 20px;
+}
+
+#fText {
+	font-size: 0.5rem;
+	color: #bd416e;
+	margin-left: 20px;
+}
+
+#eSymbol {
+	font-size: 0.5rem;
+	color: #bd416e;
+	margin-left: 30px;
+}
+
+#piSymbol {
+	font-size: 12px;
+	color: #e7ae3a;
+	margin-right: 30px;
+}
+
+#randomText {
+	font-size: 0.5rem;
+	color: #e7ae3a;
+	margin-right: 30px;
+}
+
+#randomIntText {
+	font-size: 0.5rem;
+	color: #bd416e;
+	margin-left: 30px;
+}
+
+.small-text {
+	font-size: 12px;
+	color: #e7ae3a;
+	position: absolute;
+	top: -15px;
+}

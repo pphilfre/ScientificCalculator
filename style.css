@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@400..800&family=Dosis:wght@200..800&family=Roboto:wght@700&display=swap');
+
+* {
+	border: none;
+	font-family: 'Dosis', 'Roboto', 'Baloo Paaji 2', sans-serif;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+html {
+	height: 100%;
+}
+
+body {
+	background: linear-gradient(320deg, #eb92be, #ffef78, #63c9b4);
+}
+
+.keys {
+	margin-top: auto;
+}
+
+.advanced {
+	width: 40px;
+	height: 20px;
+	margin-left: 2px;
+	margin-right: 2px;
+	background-color: #343438;
+	color: white;
+	border-radius: 6px;
+	cursor: pointer;
+	font-size: 0.6rem;
+}
+
+.number {
+	width: 50px;
+	height: 30px;
+	margin-left: 2px;
+	margin-right: 2px;
+	background-color: #272727;
+	color: white;
+	border-radius: 6px;
+	cursor: pointer;
+}
+
+.operation {
+	width: 50px;
+	height: 30px;
+	margin-left: 2px;
+	margin-right: 2px;
+	background-color: #272727;
+	color: white;
+	border-radius: 6px;
+	cursor: pointer;
+}
+
+.custom {
+	width: 50px;
+	height: 30px;
+	margin-left: 2px;
+	margin-right: 2px;
+	background-color: #272727;
+	color: white;
+	border-radius: 6px;
+	cursor: pointer;
+}
+
+.custom sup {
+	font-size: 0.6em;
+}
+
+
+.small-text sup {
+	font-size: 0.6em;
+}
+
+.advanced sup,
+.advanced sub {
+	font-size: 0.8em;
+}
+
+#outputDisplayText sup {
+	font-size: 0.6em;
+}
+
+#equals {
+	border-bottom-right-radius: 15px;
+}
+
+#zero {
+	border-bottom-left-radius: 15px;
+}
+
+#store {
+	border-bottom-left-radius: 15px;
+}
+
+#memory {
+	border-bottom-right-radius: 15px;
+}
+
+#Del {
+	background-color: #e7ae3a;
+	color: black;
+}
+
+
+#AC {
+	background-color: #e7ae3a;
+	color: black;
+	border-top-right-radius: 15px;
+}
+
+#seven {
+	border-top-left-radius: 15px;
+}
+
+#row1 {
+
+	padding-bottom: 7px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#row2 {
+	padding-bottom: 7px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#row3 {
+	padding-bottom: 7px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#row4 {
+	padding-bottom: 7px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.keys > div {
+	margin-bottom: 10px;
+	display: flex;
+	justify-content: space-around;
+	width: 100%;
+}
+
+#calculatorBase {
+	background-color: rgb(78, 78, 82);
+	height: 530px;
+	width: 300px;
+	margin-left: auto;
+	margin-right: auto;
+
+	transform: translateY(25%);
+	border-radius: 20px;
+	padding-top: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.keys-container {
+	margin-top: auto;
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+	padding-top: 0;
+}
+
+.advancedKeys {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 5px;
+	margin-bottom: 10px;
+}
+
+#invisible1,
+#invisible2 {
+	background: #4E4E52FF;
+	color: #4E4E52FF;
+	pointer-events: none;
+}
+
+
+.keys {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+
+}
+
+.display {
+	width: 260px;
+	height: 70px;
+	background-color: rgb(208, 230, 218);
+	border-radius: 10px;
+	text-align: right;
+	padding-right: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font-size: 24px;
+	color: black;
+
+	box-shadow: inset 0 -3px 8px rgba(0, 0, 0, 0.3);
+	border: 2px solid rgb(80, 80, 80);
+	justify-content: center;
+	overflow: hidden;
+	flex-shrink: 0;
+}
+
+#outputDisplayText {
+	font-size: 20px;
+	padding: 0;
+	position: absolute;
+	top: 55px;
+	right: 20px;
+}
+
+#inputDisplayText {
+	text-align: left;
+	padding: 0;
+	margin: 10px;
+	position: absolute;
+	top: 25px;
+	left: 10px;
+	font-size: 20px;
+
+}
+
